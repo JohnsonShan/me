@@ -1,0 +1,93 @@
+1. function to clone uat data to prod
+S: when I was developing new function, found that need to input data to prod manually
+T: want to imporve the process, save time and prevent typo
+A: create a export function to json and import as json
+R: user happy about that and appreciate the new function, save time and avoid input error
+
+keywords: Customer Obsession, Invent and Simplify
+
+2.  reject the requirement that out of scope / quotation
+S: when i was maintain some website, there is a request to update another website that is out of the scope.
+T: I talk to team about the situation, my manager and other team member suggest to just do the request because they dont want to get any trouble, But i believe that if you are good at something, never do it for free. Not just about the money, is about repect.
+A: I convince my manager and teams. Then report the issue to business analysis and account serivece colleague. 
+R: about a few day, customer decide to pay and buy mroe service.
+
+keywords: Customer Obsession, Have Backbone; Disagree and Commit
+
+3. suggest sqs and retry strategy
+S: schedule notification not work when things growth, customer dont receive notification, 
+T: I did some study and found out a posible solution.
+A: I suggest to use third party service like sqs and design a retry strategy. a few time withim a few mins. but manager rejected, manager explain that teams trend to keep the failed tasks then review and retry manually. also he dont want to spend extra time for the service and extra time for the retry strategy because the error happend rarely.
+R: I agree and i just updated the system to send alram email when error occur 
+
+keywords:  Have Backbone; Disagree and Commit, Ownership, failure 
+
+4. underestimate the difficulty and worload
+S: design a web app, caculator
+T: passed input, age, gender, life sytle etc.  to backend and query data from the database, get togather and caculate the result. encounter blocker ( complicated sql), spend time but cant solve the problem.
+A: deadline getting close. I asked help from the senior. he spend time with me to deal with the business logic in the code, deal with the blocker. And I also spend extra time on this.
+R: I delivered the results on time. and i bougth a coffe and a lunch for senior.
+
+keywords:  Deliver Results, 2 Ownership, failed
+
+5. suggest sqs and retry strategy
+S: schedule notification not work when things growth, customer dont receive notification, I am very upset and blame myself.
+T: But i know the only things i should do is fix the issue.
+A: first, manually send all message, spend extra time to found out the cause (scheduler need time, batch )and fixed,
+R: I learnt and same issue will not happen again.
+
+keywords: failed, Ownership
+
+6. some digits is not correct in a image
+S: I found that the infomation frondend image is not correct. It is because the requirement is changed at the last minute.
+T: The web are going to deployed and the designer was off.
+A: I decided to use the mac built in editor to edit the image.
+R: designer update the image on next day, web launched successfully and got not complain from customer.
+
+keywords: outside of your responsibility, Ownership, Deliver Results
+
+7. suggest to use the lastest tools.
+S: new project, the framework are going to Abandoned by the community. It is out of date.
+T: make a decision to use the outdated framwork (jquery), or a lastest framwork (react) but we are not familiar with.
+A: I suggest to use the lastest framework, I calculated the risk and the benefit. the worst case is the  cant fullfill the requirement and I have to spend extra time to do the work. the benefit is I can have many support from the community because the new framework is becoming popular. And I can learn new concept and design from the lastest tools. Also I am Insist on the highest standards of the industry.
+R: the new framework is awesome. it fullfill more than the requirement. also a milestone for me and teams move to new framework.
+
+keywords: Are Right, A Lot, no enough information to make an important decision, Insist on the Highest Standards, Bias for Action, took a risk at work
+
+8. things go wrong, and manager is off, roll back with no approve
+S: someday, some api return error,
+T: cant figure out the issue immediately
+A: dicided to roll back
+R: manager back and appreciate my decision, fixed the issue in a few days.
+
+keywords: Ownership, no approve
+
+9. client complain the performance, traffic increase, suggest 
+S: client complain, client is rude and impatience, blame the system
+T: after study and estimate, becase of traffic increase
+A: explained to client and agree to scale out the application, pay more hosting cost
+R: client is happy, more traffic mean more customer, sales amount increased
+
+keywords: Customer Obsession, difficult customer
+
+10. criticized, write overcomplicate code
+S: when code review, senior said my code is overcomplicate, need spend extra time to read
+T: think too much about futher development, uncessary interface 
+A: review and study existing project, write effiency and simple and straightforward code
+R: learnt to wirte good and clean code. write some comment / doc
+
+keywords: Have backbone; disagree and commit, criticized
+
+11. add a new feature, weighted, need lot of caculation, slow or down
+S: there are new feature, is good, promotion, incease sales
+T: deploy will slow down the systme
+A: scale up the application, is slower but acceptable
+R: happy, sales increase
+
+keywords: Bias for action, known risks / caculated risks 
+
+12. aws cloud9, cloud ide
+
+S: bypass security restrict
+
+keywords: Invent and Simplify, new approach

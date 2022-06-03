@@ -1,0 +1,14 @@
+Abstraction. 
+Using simple things to represent complexity.
+
+Encapsulation. 
+The practice of keeping fields within a class private, then providing access to those fields via public methods.
+
+Inheritance. 
+A special feature of Object-Oriented Programming in Java, Inheritance lets programmers create new classes that share some of the attributes of existing classes.
+
+Polymorphism. 
+Allows programmers to use the same word in Java to mean different things in different contexts. One form of polymorphism is method overloading. 
+
+class animal 
+sound, say

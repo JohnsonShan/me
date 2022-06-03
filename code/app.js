@@ -1,0 +1,5 @@
+let map = new Map()
+map.set('a', 1)
+map.set('b', 2)
+map.set('qwe', 3)
+console.log(map.size)
