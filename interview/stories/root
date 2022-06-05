@@ -1,93 +1,98 @@
 1. function to clone uat data to prod
-S: when I was developing new function, found that need to input data to prod manually
-T: want to imporve the process, save time and prevent typo
-A: create a export function to json and import as json
-R: user happy about that and appreciate the new function, save time and avoid input error
+S: when I was developing some new feature in a content management system , found that is a situation, need to input data to prod manually, inconvenience, cost a few hours, every week, easy to have typo or input error
+T: I obess Customer's need want to imporve the process, to save time and prevent input error
+A: diccuss with Customer, earn trust from Customer, we agree to create a function to export uat data in json and import to prod, 
+R: Customer happy about that and appreciate the new function, reduece about 15% workload then the Customer can put their attention on other things.
 
 keywords: Customer Obsession, Invent and Simplify
 
 2.  reject the requirement that out of scope / quotation
-S: when i was maintain some website, there is a request to update another website that is out of the scope.
-T: I talk to team about the situation, my manager and other team member suggest to just do the request because they dont want to get any trouble, But i believe that if you are good at something, never do it for free. Not just about the money, is about repect.
-A: I convince my manager and teams. Then report the issue to business analysis and account serivece colleague. 
-R: about a few day, customer decide to pay and buy mroe service.
+S: when i was doing maintenance for a brand, brand has several productline and website for each product. I found that there is a ticket to update another website that is out of the service. which mean customer have not pay for the it.
+T: I talk to manager about the situation, my manager and other team member suggest to just do the ticket because they dont want to get any trouble, big customer for company, But i believe that if you are good at something, never do it for free.
+A: I convince my manager and teams. Then agreed to report the situation to business analysis and account serivece colleague. 
+R: about a few days, customer decide to pay and buy mroe service. the new quotation included some new productline and website. and the sales amount from the brand increased about 10-20%
 
 keywords: Customer Obsession, Have Backbone; Disagree and Commit
 
-3. suggest sqs and retry strategy
-S: schedule notification not work when things growth, customer dont receive notification, 
-T: I did some study and found out a posible solution.
-A: I suggest to use third party service like sqs and design a retry strategy. a few time withim a few mins. but manager rejected, manager explain that teams trend to keep the failed tasks then review and retry manually. also he dont want to spend extra time for the service and extra time for the retry strategy because the error happend rarely.
-R: I agree and i just updated the system to send alram email when error occur 
+3. customer dont receive notification, scaling, sqs
+S: scheduler for push notification, work good at first. when things growth, increase 3-4times go wrongs, some customer dont receive notification, shock, upset, felt Guilty,
+T:  but soon, i notice that i have to pick myself up and to solve the problem.
+A: i manually retry to push notification, some code not work good, optimize the program, fixed the issue in a fews day. 
+R: i learn a lot, think about more scaling, the issue will not happen again in my career life.
+
+T: although, fixed quicky. I have to found out a posible solution to prevent error happend again,
+A: I did some research and suggest to use somethings like aws lambda or aws sqs to handle the scaling problem and also design a retry strategy. however manager rejected, he explained that company policy trend to keep the failed tasks then review and retry manually. also he dont want to spend extra money for the service and too much time for the retry strategy.
+R: I agree and i just updated the system to send alram email when error occur
 
 keywords:  Have Backbone; Disagree and Commit, Ownership, failure 
 
 4. underestimate the difficulty and worload
-S: design a web app, caculator
-T: passed input, age, gender, life sytle etc.  to backend and query data from the database, get togather and caculate the result. encounter blocker ( complicated sql), spend time but cant solve the problem.
-A: deadline getting close. I asked help from the senior. he spend time with me to deal with the business logic in the code, deal with the blocker. And I also spend extra time on this.
-R: I delivered the results on time. and i bougth a coffe and a lunch for senior.
+S: design a web app, caculator, approximate insurance premium
+T: passed input, age, gender, life sytle etc.  to backend and query data from the database, put data togather and caculate the result. encounter blocker ( complicated sql, business logic in code), spend time more that expected but cant solve the problem.
+A: deadline getting closer. I asked help from the teammember. he spend time with me to deal with the blocker. And I also have to spend extra time on this.
+R: luckily, I can delivered the task on time. learnt never underestimate the task, pay more attension, encounter problem, ask for help eariler, then you can still have enough time to finish the task
 
-keywords:  Deliver Results, 2 Ownership, failed
+keywords:  Deliver Results, Bias for Action, failed, deadline
 
-5. suggest sqs and retry strategy
-S: schedule notification not work when things growth, customer dont receive notification, I am very upset and blame myself.
-T: But i know the only things i should do is fix the issue.
-A: first, manually send all message, spend extra time to found out the cause (scheduler need time, batch )and fixed,
-R: I learnt and same issue will not happen again.
-
-keywords: failed, Ownership
-
-6. some digits is not correct in a image
-S: I found that the infomation frondend image is not correct. It is because the requirement is changed at the last minute.
-T: The web are going to deployed and the designer was off.
-A: I decided to use the mac built in editor to edit the image.
-R: designer update the image on next day, web launched successfully and got not complain from customer.
+5. some digits is not correct in a image
+S: builing website, I found that the infomation frondend image is not correct. It is because the requirement changed at the last minute.
+T: The web is going to deploy and the designer was off on that day.
+A: I decided to use the mac os built in image editor to edit the image. i spend 1-2 hours on this, the image looks good.
+R: web launched successfully and got not complain about the image from anyone, designer comeback update the image on next day.
 
 keywords: outside of your responsibility, Ownership, Deliver Results
 
-7. suggest to use the lastest tools.
-S: new project, the framework are going to Abandoned by the community. It is out of date.
+6. suggest to use the lastest tools.
+S: new project, the framework that my teams used for a long time are going to out of date. 
 T: make a decision to use the outdated framwork (jquery), or a lastest framwork (react) but we are not familiar with.
-A: I suggest to use the lastest framework, I calculated the risk and the benefit. the worst case is the  cant fullfill the requirement and I have to spend extra time to do the work. the benefit is I can have many support from the community because the new framework is becoming popular. And I can learn new concept and design from the lastest tools. Also I am Insist on the highest standards of the industry.
-R: the new framework is awesome. it fullfill more than the requirement. also a milestone for me and teams move to new framework.
+A: dicuss with teams, I suggest to use the lastest framework, I calculated the risk and the benefit. the worst case is the  cant fullfill the use case and I have to spend extra time to do the work with old framework again. the benefit is the lastest framework have better performance, 3-4 times of the old one, also I can get many support from the community because the new framework is becoming popular. And I can learn some new concept and design from the lastest framework. Also I am Insisting on the highest standards of the industry.
+R: the new framework is awesome. it fullfill more than the requirement. the response time is very very fast, 3-4 times of old approach, also a milestone for me and teams move to new framework.
 
-keywords: Are Right, A Lot, no enough information to make an important decision, Insist on the Highest Standards, Bias for Action, took a risk at work
+keywords: Insist on the Highest Standards, Bias for Action,
 
-8. things go wrong, and manager is off, roll back with no approve
-S: someday, some api return error,
-T: cant figure out the issue immediately
-A: dicided to roll back
-R: manager back and appreciate my decision, fixed the issue in a few days.
+7. things go wrong, and manager is off, roll back with no approve
+S: a new feature deployed, after a few day, system is down, not acceptable
+T: spend a 3-4 hours to study, cant fix the issue immediately
+A: dicided to roll back the feature, manaer is off, there would be a traffic spike in a few day because of the marketing event, the issue would become disaster, roll back with out approve.
+R: manager back in next week, explain to stakeholder, they appreciate my decision, because it avoided the most worse case, luckily the marketing event still good, 2-3 times traffic increased, sales amount increase 40%, stakeholder were happy about that, fixed the issue in a few days.
 
 keywords: Ownership, no approve
 
-9. client complain the performance, traffic increase, suggest 
-S: client complain, client is rude and impatience, blame the system
-T: after study and estimate, becase of traffic increase
-A: explained to client and agree to scale out the application, pay more hosting cost
-R: client is happy, more traffic mean more customer, sales amount increased
+8. client complain the performance, traffic increase, suggest 
+S: first is good, become slow and have down time, client complain, client become rude and impatience, our work is not good, losing trust from client 
+T: I handle the case, after study data and metrics, becase of traffic increased.
+A: show the data, explained to client, earn trust from client again. suggest to scale out the application, pay more hosting cost
+R: client agree, more traffic mean more customer, sales amount was increased 20-30%, client willing to pay more for the application, set up a auto scale policy, able to handle 10 or more times traffic
 
 keywords: Customer Obsession, difficult customer
 
-10. criticized, write overcomplicate code
-S: when code review, senior said my code is overcomplicate, need spend extra time to read
-T: think too much about futher development, uncessary interface 
-A: review and study existing project, write effiency and simple and straightforward code
-R: learnt to wirte good and clean code. write some comment / doc
+9. criticized, code not good, overcomplicate
+S: when i am new to workplace, code is not good, when code review, senior said my code is overcomplicate, not easy to read, unnecessary caculation, perforamance and effiency not good, suggestion.
+T: I have to do something to imporve my code.
+A: review and study existing project, read document, and blog. also stackoverflow,  insist the industry highest standard write effiency and simple and clen code
+R: code become better, clean, easy to read and effiency. I earn trust from manager and start to incharge of some project after a few weeks.
 
-keywords: Have backbone; disagree and commit, criticized
+keywords: Have backbone; disagree and commit, criticized, Insist on the Highest Standards, Earn Trust
 
-11. add a new feature, weighted, need lot of caculation, slow or down
-S: there are new feature, is good, promotion, incease sales
-T: deploy will slow down the systme
-A: scale up the application, is slower but acceptable
-R: happy, sales increase
+10. add a new feature, weighting, need lot of caculation, slow or down
+S: there are new feature, about product search, enchance search algo, add weighting to product
+T: feature, we expected will have 30-50% sales amount increase, estimate will slow down the systme, I still decided to deploy the new feature, becuase the new fecture give a big value, and I caculated the risk and i think is acceptable
+A: scale up the application, is slidely slower but still work very good,
+R: happy, sales increase 30-50%
 
 keywords: Bias for action, known risks / caculated risks 
 
-12. aws cloud9, cloud ide
+11. learn aws cloud
+S: in my current role, there is a legacy application. which have bad performance and expensive hosting cost.
+T: My task is to solve those problem.
+A: I study about aws, and decided to migrate the application to aws. I learn a lot about aws from community and the document. to insist the standards, i follow the best practice to built the cloud architect.  moreover, i dive deep into it, and passed the aws solution architect associate exam. the application deploed to aws. and also, i study and estimate some code, optimize and simplify some code.
+R: the application was good on aws, performance enhanced about 30% and cost recuded 70%
 
-S: bypass security restrict
+keywords: Learn and Be Curious, Dive Deep
 
-keywords: Invent and Simplify, new approach
+12. suggest chrome extension
+invent and simplify
+
+13. react native, hybird solution
+
+14. generate report, javscript
